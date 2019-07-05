@@ -59,16 +59,25 @@
 <pre>
   這次我們先使用Euler's Method來解這個問題，如果不知道什麼是Euler's Method沒關係，
 我們就先知道實作的方法就行。
-  首先，我們看到以下等式。
+  首先，我們一樣會先把座標和速度分成垂直、水平分量來解決，
+我們以水平方向為例，列出以下等式。
 </pre>
 <ol type="1" start="1">
-  <li>lim，速度是距離函數的一次微分(速度的定義)</li>
-  <li>lim，加速度是距離函數的二次微分，或說是速度函數的一次微分(加速度的定義)</li>
+  <li><img src="definition of velocity.jpg" alt="definition of velocity" title="definition of velocity">，速度的定義</li>
+  <li><img src="definition of acceleration.jpg" alt="definition of acceleration" title="definition of velocity">，加速度的定義</li>
 </ol>
 <pre>
-  第1條等式
+  我們可以把等式寫成這樣:
 </pre>
-
+<ol type="1" start="1">
+  <li><img src="increase of x.jpg" alt="increase of x.jpg">x<sub>t0+Δt</sub>=x<sub>t0</sub>+v<sub>0</sub>．Δt</li>
+  <li><img src="increase of v.jpg" alt="increase of v.jpg"><p>v<sub>t0+Δt</sub>=v<sub>t0</sub>+a<sub>0</sub>．Δt</p></li>
+</ol>
+  
+<pre>
+  然後我們只要給電腦指定Δt，讓他跑為圈，我們就可以一次次的疊帶出各個時間點的座標以及速度，
+而Δt越小，得到的結果也會有越小的誤差。
+</pre>
 
   </body>
 </html>
