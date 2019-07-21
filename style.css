@@ -5,6 +5,7 @@ html{
 body {
   background-color: PowderBlue;
   font-size: 18px;
+  line-height: 30px;
   font-family: DFKai-sb;
 }
 h1 {
@@ -66,6 +67,14 @@ ul {
   cursor: url(Text.cur), auto;
   color: black;
 }
+
+mark{
+  font-family: DFKai-sb;
+  color: Blue;
+  background-color: powderblue;
+  
+}
+
 table, th, td {
   cursor: url(Text.cur), auto;
   border-collapse: collapse;
